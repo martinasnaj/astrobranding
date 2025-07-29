@@ -1,31 +1,21 @@
+
 import streamlit as st
-import json
+from astro_calc import calculate_positions
+from branding_logic import generate_branding
 
-# Načtení dat
-def load_json(filename):
-    with open(filename, 'r', encoding='utf-8') as f:
-        return json.load(f)
-
-sun_data = load_json('sun_phrases.json')
-moon_data = load_json('moon_phrases.json')
-lp_data = load_json('life_path_phrases.json')
-
-st.title("🌌 Astromystika — Jazyk tvé Duše")
-st.markdown("Objev značku své esence skrze živý algoritmus paměti.")
+st.title("🌟 Astrobranding – Tvá hvězdná značka")
 
 name = st.text_input("Jméno")
-life_path = st.selectbox("Životní číslo", list(lp_data.keys()))
-sun_sign = st.selectbox("Sluneční znamení", list(sun_data.keys()))
-moon_sign = st.selectbox("Lunární znamení", list(moon_data.keys()))
+date = st.text_input("Datum narození (DD.MM.RRRR)")
+time = st.text_input("Čas narození (HH:MM)")
+place = st.text_input("Místo narození")
 
-if st.button("Vygeneruj poselství"):
-    lp_phrase = lp_data[life_path]
-    sun_phrase = sun_data[sun_sign]
-    moon_phrase = moon_data[moon_sign]
-    
-    st.markdown(f"### 🌟 Značka pro {name}")
-    st.write(f"**Životní tón:** {lp_phrase}")
-    st.write(f"**Světelná esence:** {sun_phrase}")
-    st.write(f"**Niterný proud:** {moon_phrase}")
-    st.markdown(f"---\n**Poselství duše:**\n{lp_phrase} {sun_phrase} {moon_phrase}")
-
+if st.button("Získat značku"):
+    sun, moon, asc = calculate_positions(date, time, place)
+    word, phrase = generate_branding(sun, moon, asc)
+    st.markdown(f"## 🌠 {name}")
+    st.write(f"**Slunce:** {sun}")
+    st.write(f"**Luna:** {moon}")
+    st.write(f"**Ascendent:** {asc}")
+    st.markdown(f"### ✨ Značka duše: *{word}*")
+    st.markdown(f"---\n**Poselství:** {phrase}")

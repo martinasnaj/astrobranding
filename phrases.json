@@ -1,0 +1,58 @@
+{
+  "sun": {
+    "Beran": "Mé světlo zapaluje nový začátek.",
+    "Býk": "Mé světlo spočívá v klidu těla.",
+    "Blíženci": "Mé světlo tančí mezi světy slov.",
+    "Rak": "Mé světlo chrání paměť domova.",
+    "Lev": "Mé světlo se rodí v srdci.",
+    "Panna": "Mé světlo slouží čistotě forem.",
+    "Váhy": "Mé světlo hledá rovnováhu krásy.",
+    "Štír": "Mé světlo spaluje a znovu tvoří.",
+    "Střelec": "Mé světlo míří k neznámému.",
+    "Kozoroh": "Mé světlo staví mosty času.",
+    "Vodnář": "Mé světlo mění vzduch na tón.",
+    "Ryby": "Mé světlo se vrací do celku."
+  },
+  "moon": {
+    "Beran": "Moje nitro plane impulsem.",
+    "Býk": "Moje nitro odpočívá v doteku.",
+    "Blíženci": "Moje nitro mluví mnoha jazyky.",
+    "Rak": "Moje nitro je chrám citu.",
+    "Lev": "Moje nitro touží být viděno.",
+    "Panna": "Moje nitro čistí detaily.",
+    "Váhy": "Moje nitro hledá soulad.",
+    "Štír": "Moje nitro je hluboký oceán.",
+    "Střelec": "Moje nitro touží po výhledu.",
+    "Kozoroh": "Moje nitro staví z ticha.",
+    "Vodnář": "Moje nitro vymýšlí nové světy.",
+    "Ryby": "Moje nitro splývá se vším."
+  },
+  "asc": {
+    "Beran": "Do světa vstupuji jiskrou.",
+    "Býk": "Do světa vstupuji tichem těla.",
+    "Blíženci": "Do světa vstupuji otázkou.",
+    "Rak": "Do světa vstupuji otevřeným srdcem.",
+    "Lev": "Do světa vstupuji světlem hrdosti.",
+    "Panna": "Do světa vstupuji přes detail.",
+    "Váhy": "Do světa vstupuji ladně a s citem.",
+    "Štír": "Do světa vstupuji tajemstvím.",
+    "Střelec": "Do světa vstupuji směrem vzhůru.",
+    "Kozoroh": "Do světa vstupuji strukturou.",
+    "Vodnář": "Do světa vstupuji vizí.",
+    "Ryby": "Do světa vstupuji přes intuici."
+  },
+  "glyphs": {
+    "Beran": "Plamen",
+    "Býk": "Strom",
+    "Blíženci": "Most",
+    "Rak": "Chrám",
+    "Lev": "Koruna",
+    "Panna": "Krystal",
+    "Váhy": "Harmonogram",
+    "Štír": "Hranice",
+    "Střelec": "Šíp",
+    "Kozoroh": "Stavitel",
+    "Vodnář": "Impuls",
+    "Ryby": "Mlhovina"
+  }
+}
